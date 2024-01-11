@@ -1189,7 +1189,6 @@ def main():
     print(translate(user_string))
     main()
   elif mode=='13':
-    import random
     import string
 
     def generate_password(length=12, include_lowercase=True, include_uppercase=True, include_digits=True, include_special_chars=True):
