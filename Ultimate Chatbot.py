@@ -1223,12 +1223,11 @@ def main():
           meets_criteria = meets_criteria and has_special
       return pwd
 
-    minlength = int(input("Enter password length: "))
+    min_length = int(input("Enter password length: "))
     has_number = input("Include digits? (y/n): ").lower() == "y"
     has_special = input("Include special characters? (y/n): ").lower() == "y"
-    numberofpwd = int(input("How many passwords of this sort do you wish to request for?\n"))
 
-    password = generate_password(numberofpwd)
+    password = generate_password(1)
     print("Generated Password:", password)
     main()
   else:
