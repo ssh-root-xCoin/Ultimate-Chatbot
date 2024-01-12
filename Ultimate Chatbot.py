@@ -1191,31 +1191,44 @@ def main():
   elif mode=='13':
     import string
 
-    def generate_password(length=12, include_lowercase=True, include_uppercase=True, include_digits=True, include_special_chars=True):
-        # Define character sets based on user preferences
-        lowercase_letters = string.ascii_lowercase if include_lowercase else ""
-        uppercase_letters = string.ascii_uppercase if include_uppercase else ""
-        digits = string.digits if include_digits else ""
-        special_chars = string.punctuation if include_special_chars else ""
+    def generate_password(min_length, numbers=True, special_characters=True):
+      letters = string.ascii_letters
+      digits = string.digits
+      special = string.punctuation
 
-        # Combine character sets
-        all_chars = lowercase_letters + uppercase_letters + digits + special_chars
+      characters = letters
+      if numbers:
+        characters+=digits
+      if special_characters:
+        characters+=special
+      
+      pwd = ""
+      meets_criteria = False
+      has_number = False
+      has_special = False
 
-        # Ensure the password length is at least 4 characters
-        length = max(length, 4)
+      while not meets_criteria or len(pwd) < min_length:
+        new_char = random.choice(characters)
+        pwd += new_char
 
-        # Generate the password
-        password = ''.join(random.choice(all_chars) for _ in range(length))
+        if new_char in digits:
+          has_number = True
+        elif new_char in special:
+          has_special = True
+        
+        meets_criteria = True
+        if numbers:
+          meets_criteria = has_number
+        if special_characters:
+          meets_criteria = meets_criteria and has_special
+      return pwd
 
-        return password
+    minlength = int(input("Enter password length: "))
+    has_number = input("Include digits? (y/n): ").lower() == "y"
+    has_special = input("Include special characters? (y/n): ").lower() == "y"
+    numberofpwd = int(input("How many passwords of this sort do you wish to request for?\n"))
 
-    length = int(input("Enter password length(Can't be lesser than 4!): "))
-    include_lowercase = bool(input("Include lowercase letters? (True/False): ").lower())
-    include_uppercase = bool(input("Include uppercase letters? (True/False): ").lower())
-    include_digits = bool(input("Include digits? (True/False): ").lower())
-    include_special_chars = bool(input("Include special characters? (True/False): ").lower())
-
-    password = generate_password(length, include_lowercase, include_uppercase, include_digits, include_special_chars)
+    password = generate_password(numberofpwd)
     print("Generated Password:", password)
     main()
   else:
