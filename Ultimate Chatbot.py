@@ -1192,19 +1192,6 @@ def main():
     import string
 
     def generate_password(length=12, include_lowercase=True, include_uppercase=True, include_digits=True, include_special_chars=True):
-        """
-        Generate a random password based on user preferences.
-
-        Parameters:
-        - length (int): Length of the password (default is 12).
-        - include_lowercase (bool): Include lowercase letters in the password (default is True).
-        - include_uppercase (bool): Include uppercase letters in the password (default is True).
-        - include_digits (bool): Include digits (0-9) in the password (default is True).
-        - include_special_chars (bool): Include special characters in the password (default is True).
-
-        Returns:
-        - str: Generated password.
-        """
         # Define character sets based on user preferences
         lowercase_letters = string.ascii_lowercase if include_lowercase else ""
         uppercase_letters = string.ascii_uppercase if include_uppercase else ""
@@ -1223,10 +1210,10 @@ def main():
         return password
 
     length = int(input("Enter password length(Can't be lesser than 4!): "))
-    include_lowercase = input("Include lowercase letters? (y/n): ").lower()
-    include_uppercase = input("Include uppercase letters? (y/n): ").lower()
-    include_digits = input("Include digits? (y/n): ").lower()
-    include_special_chars = input("Include special characters? (y/n): ").lower()
+    include_lowercase = bool(input("Include lowercase letters? (True/False): ").lower())
+    include_uppercase = bool(input("Include uppercase letters? (True/False): ").lower())
+    include_digits = bool(input("Include digits? (True/False): ").lower())
+    include_special_chars = bool(input("Include special characters? (True/False): ").lower())
 
     password = generate_password(length, include_lowercase, include_uppercase, include_digits, include_special_chars)
     print("Generated Password:", password)
