@@ -38,7 +38,8 @@ def main():
     "what are you made of": "I am built using python.",
     "how intelligent are you": "I am intelligent but enough to answer all your queries.",
     "how old are you": "I am at the end of my life.",
-    "what is your favorite color" or "what is your favourite colour": "My favorite color is blood red.",
+    "what is your favorite color" : "My favorite color is blood red.",
+    "what is your favourite color" : "My favorite color is blood red.",
     "default": "What'd ya say?",
     "thank you": "Hey, don't thank me, neither God as he has given life that will end soon enough anyways. Time wasted.",
     "commands": "you can ask me 'hi', 'how are you', 'who is your favorite singer', 'what are you made of','thank you', 'how intelligent are you', 'how old are you', 'what is your favorite color', and 'change mode'."
