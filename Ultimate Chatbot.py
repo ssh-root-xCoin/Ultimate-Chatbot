@@ -298,7 +298,9 @@ def main():
                               (3, 'kg', 'lbs'),
                               (4, 'lbs', 'kg'),
                               (5, '℉', '℃'),
-                              (6, '℃', '℉')]
+                              (6, '℃', '℉'),
+                              (7, 'cm', 'inches'),
+                              (8, 'inches', 'cm')]
 
       print('Conversions available: ')
       print()
@@ -337,6 +339,12 @@ def main():
 
       elif conversion_number == 6:
           to_value = (from_value * 1.8 + 32)
+          print(f'{from_value} {from_unit} -> {to_value} {to_unit}')
+      elif conversion_number == 7:
+          to_value = from_value / 30
+          print(f'{from_value} {from_unit} -> {to_value} {to_unit}')
+      elif conversion_number == 8:
+          to_value = from_value * 30
           print(f'{from_value} {from_unit} -> {to_value} {to_unit}')
       if conversions_available or conversion == "back":
         return main()
