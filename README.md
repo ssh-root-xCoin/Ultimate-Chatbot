@@ -1,4 +1,3 @@
-
 # Ultimate Chatbot
 
 So, my friend was leaving school and my country forever (She was foreign) so as a farewell present, I coded an AI chatbot in Python for her so that if she ever feels alone, she will atleast have someone to talk to.
@@ -32,8 +31,25 @@ To deploy this project run
  - [Bro Code's tutorials](https://www.youtube.com/@BroCodez)
  - [Rancho Labs](https://www.rancholabs.com)
 
+## Open Source Contributors
 
-## Authors
+Thanks goes to these wonderful people ([:hugs:](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section unless you want to add code to this project and contribute to master branch-->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- KEEP IN MIND THAT ONLY 4 PROFILES CAN BE IN ONE LINE SO JUST USE ANOTHER <tr> and </tr> TO CREATE AND FINISH A LINE -->
+<table>
+    <tbody>
+        <tr>
+            <td align="center">
+                <a href="youtube.com/@xCoin_">
+                    <img src="https://github.com/account" width="100px;" alt="xCoincidence"/>
+                    <br />
+                    <sub><b>xCoincidence</b></sub>
+                </a> 
+            </td>
+
+## Author
 
 - [@ssh-root-xcoin](https://www.github.com/ssh-root-xcoin)
-
