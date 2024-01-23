@@ -43,13 +43,9 @@ Thanks goes to these wonderful people ([:hugs:](https://allcontributors.org/docs
     <tbody>
         <tr>
             <td align="center">
-                <a href="youtube.com/@xCoin_">
-                    <img src="https://github.com/account" width="100px;" alt="xCoincidence"/>
+                <a href="https://www.github.com/ssh-root-xcoin">
+                    <img src="https://avatars.githubusercontent.com/u/60308964?v=4" width="100px;" alt="xCoincidence"/>
                     <br />
-                    <sub><b>xCoincidence</b></sub>
+                    <sub><b>xCoincidence (Author)</b></sub>
                 </a> 
             </td>
-
-## Author
-
-- [@ssh-root-xcoin](https://www.github.com/ssh-root-xcoin)
