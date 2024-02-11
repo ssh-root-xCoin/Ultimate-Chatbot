@@ -406,7 +406,7 @@ def main():
 
     options = (("A. 116", "B. 117", "C. 118", "D. 119"),
                    ("A. Whale", "B. Crocodile", "C. Elephant", "D. Ostrich"),
-                   ("A. Nitrogen", "B. Oxygen", "C. Carbon-Dioxide", "D. Hydrogen"),
+                   ("A. Nitrogen", "B. Oxygen", "C. Carbon Dioxide", "D. Hydrogen"),
                    ("A. 206", "B. 207", "C. 208", "D. 209"),
                    ("A. Mercury", "B. Venus", "C. Earth", "D. Mars"),
                    ("A. Barcelona","B. Paris","C. Rome","D. China"),
