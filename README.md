@@ -15,7 +15,7 @@ To deploy this project run
   pip3 install pyjokes
   pip3 install phonenumbers
   pip3 install numpy
-  pip3 install  pywhatkit
+  pip3 install pywhatkit
   pip3 install pytube
   pip3 install time
   pip3 install datetime
