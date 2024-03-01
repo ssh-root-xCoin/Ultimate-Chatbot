@@ -33,7 +33,7 @@ To deploy this project run
 
 ## Open Source Contributors
 
-Thanks goes to these wonderful people ([:hugs:](https://allcontributors.org/docs/en/emoji-key)):
+Thanks go to these wonderful people ([:hugs:](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section unless you want to add code to this project and contribute to master branch-->
 <!-- prettier-ignore-start -->
