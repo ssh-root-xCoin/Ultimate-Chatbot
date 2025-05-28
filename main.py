@@ -1,8 +1,7 @@
 import numpy
-from numpy import *
 import tkinter
-from tkinter import *
 import pygame
+import pywhatkit.misc
 def main():
   import random
   import datetime
@@ -11,6 +10,7 @@ def main():
   import pywhatkit
   import requests
   import time
+  from pywhatkit.misc import playonyt
   joke = ['I was going to tell you a joke about boxing but I forgot the punch line.','Why did the egg hide? It was a little chicken.',"I wanted to buy some camo pants but couldn't find any.","I ordered a chicken and an egg from Amazon. I'll let you know.","What month is the shortest of the year? May, it only has three letters.","How do you open a banana? With a mon-key.","Did you hear about the guy whose left side was cut off? He's all right now.","What does a pig put on dry skin? Oinkment.","Why do we tell actors to 'break a leg?' Because every play has a cast.",pyjokes.get_joke()]
 
   conversation = {
@@ -103,7 +103,7 @@ def main():
           elif 'play' in user_input:
             song = user_input.replace('play', '')
             print('playing ' + song)
-            pywhatkit.playonyt(song)
+            playonyt(song)
           elif 'quote' in user_input:
             import requests
 
@@ -269,10 +269,12 @@ def main():
             break
       if typeofinterest == 'compound':
         comptotal = principle * pow((1 + rate / 100), time)
-        print(f"Balance after {time} year/s: ${comptotal:.2f}")
+        compbalance = comptotal + principle
+        print(f"Balance after {time} year/s: ${compbalance}")
       elif typeofinterest =='simple':
         simptotal = (principle * rate * time) / 100
-        print(f"Balance after {time} year/s: ${simptotal:.2f}")
+        simpbalance = simptotal + principle
+        print(f"Balance after {time} year/s: ${simpbalance}")
     elif mode2 == "7":
       from_currency = str(
           input("Enter in the currency you'd like to convert from: ")).upper()
