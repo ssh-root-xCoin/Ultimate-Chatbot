@@ -23,6 +23,8 @@ To deploy this project run
   pip3 install requests
   pip3 install nltk
   pip3 install pillow
+  pip3 install googlesearch-python
+  pip3 install streamlit
 ```
 
 
